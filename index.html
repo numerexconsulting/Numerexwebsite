@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Numerex | Fractional CFO & Strategic Finance</title>
-  <meta name="description" content="Numerex provides fractional CFO and strategic finance support: cash flow, forecasting, KPI reporting, and board-ready materials." />
+
+  <!-- SEO Title -->
+  <title>Numerex | Fractional CFO Services (Canada) | Cash Flow, Forecasting & KPI Reporting</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Numerex provides fractional CFO and strategic finance support in Canada. Cash flow + runway planning, forecasting, KPI reporting, board-ready materials, and finance ops oversight." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="#" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Numerex | Fractional CFO Services (Canada)" />
+  <meta property="og:description" content="Fractional CFO and strategic finance support: cash flow, forecasting, KPI reporting, and board-ready materials." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo_nx.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Numerex | Fractional CFO Services (Canada)" />
+  <meta name="twitter:description" content="Cash flow + runway planning, forecasting, KPI reporting, and board-ready materials." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
   <style>
     :root{
       --bg:#ffffff;
@@ -52,7 +71,7 @@
     .kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(2,6,23,.03);border:1px solid var(--line);color:var(--muted);font-weight:600}
     .kicker .dot{width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--brand1),var(--brand2))}
     h1{font-size:44px;letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
-    .sub{font-size:18px;color:var(--muted);max-width:720px;margin:0 0 22px}
+    .sub{font-size:18px;color:var(--muted);max-width:760px;margin:0 0 22px}
     .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:10px}
     .cta-note{margin-top:14px;color:var(--muted);font-size:14px}
     .cta-note a{text-decoration:underline}
@@ -60,7 +79,7 @@
     section{padding:56px 0;border-top:1px solid var(--line)}
     .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
     .section-head h2{margin:0;font-size:28px;letter-spacing:-.02em}
-    .section-head p{margin:0;color:var(--muted);max-width:620px}
+    .section-head p{margin:0;color:var(--muted);max-width:720px}
 
     .grid{display:grid;gap:16px}
     .grid.cols-3{grid-template-columns:repeat(3, minmax(0,1fr))}
@@ -75,11 +94,15 @@
     .proof{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:26px}
     .proof .chip{padding:10px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);font-weight:600;font-size:13px}
 
-    .price{display:flex;align-items:baseline;gap:8px;margin:8px 0 10px}
-    .price .amt{font-size:28px;font-weight:800;letter-spacing:-.02em}
-    .price .per{color:var(--muted);font-weight:600}
-    ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
-    li{margin:6px 0}
+    /* Case study styling */
+    .case{background:var(--soft);border:1px solid var(--line);border-radius:24px;padding:22px}
+    .case-top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:14px}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:13px}
+    .case h3{margin:0;font-size:18px}
+    .case-grid{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:14px;margin-top:14px}
+    .mini{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
+    .mini strong{display:block;margin-bottom:6px}
+    .mini p{margin:0;color:var(--muted)}
 
     .cta-band{background:linear-gradient(135deg, rgba(0,179,184,.12), rgba(0,102,204,.10));border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
     .cta-band h3{margin:0;font-size:20px}
@@ -94,6 +117,7 @@
       h1{font-size:38px}
       .grid.cols-3{grid-template-columns:1fr}
       .grid.cols-2{grid-template-columns:1fr}
+      .case-grid{grid-template-columns:1fr}
       .section-head{flex-direction:column;align-items:flex-start}
       .cta-band{flex-direction:column;align-items:flex-start}
     }
@@ -115,7 +139,7 @@
       <a href="#services">Services</a>
       <a href="#why">Why Numerex</a>
       <a href="#process">Process</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#case-studies">Case Studies</a>
       <a href="#contact">Contact</a>
       <a class="pill primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
     </nav>
@@ -267,53 +291,52 @@
   </div>
 </section>
 
-<section id="pricing">
+<section id="case-studies">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>Simple monthly packages</h2>
-        <p>Flexible, month-to-month options. Final scope depends on complexity and cadence.</p>
+        <h2>Case studies</h2>
+        <p>Representative examples of the types of outcomes we drive. (Details anonymized.)</p>
       </div>
-      <a class="pill" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Discuss pricing</a>
+      <a class="pill" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Discuss your situation</a>
     </div>
 
-    <div class="grid cols-3">
-      <div class="card">
-        <h3>Foundation</h3>
-        <div class="price"><div class="amt">$995</div><div class="per">/ month</div></div>
-        <p class="small">For teams needing core visibility and a monthly cadence.</p>
-        <ul>
-          <li>Cash dashboard + runway</li>
-          <li>Monthly KPI snapshot</li>
-          <li>Monthly review call</li>
-        </ul>
+    <div class="grid cols-2">
+      <div class="case">
+        <div class="case-top">
+          <div class="badge">SaaS • Cash visibility</div>
+          <div class="badge">6–8 weeks</div>
+        </div>
+        <h3>From “we’re not sure” to a weekly runway dashboard</h3>
+        <p style="color:var(--muted);margin:10px 0 0;">
+          The team lacked a consistent cash view and decisions were reactive. Numerex implemented a forecasting cadence, clarified drivers, and introduced a simple reporting pack.
+        </p>
+        <div class="case-grid">
+          <div class="mini"><strong>Challenge</strong><p>No single source of truth for runway, burn, or near-term hiring capacity.</p></div>
+          <div class="mini"><strong>What we did</strong><p>Built a drivers-based cash forecast + KPI set, and set a weekly update rhythm.</p></div>
+          <div class="mini"><strong>Outcome</strong><p>Clear runway visibility, fewer surprises, and faster decisions on spend + hiring.</p></div>
+        </div>
       </div>
 
-      <div class="card" style="border-color: rgba(0,179,184,.35); box-shadow: var(--shadow);">
-        <h3>Growth</h3>
-        <div class="price"><div class="amt">$1,995</div><div class="per">/ month</div></div>
-        <p class="small">For teams who want forecasting + operating support.</p>
-        <ul>
-          <li>Drivers-based forecast</li>
-          <li>Monthly management pack</li>
-          <li>Priority async support</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Scale</h3>
-        <div class="price"><div class="amt">$3,495</div><div class="per">/ month</div></div>
-        <p class="small">For higher complexity and stakeholder reporting.</p>
-        <ul>
-          <li>Board/investor reporting</li>
-          <li>Scenario planning</li>
-          <li>Transaction readiness support</li>
-        </ul>
+      <div class="case">
+        <div class="case-top">
+          <div class="badge">PE-backed • Board reporting</div>
+          <div class="badge">4–6 weeks</div>
+        </div>
+        <h3>Board-ready reporting and a cleaner monthly close</h3>
+        <p style="color:var(--muted);margin:10px 0 0;">
+          Stakeholder reporting was inconsistent and took too long. Numerex streamlined the close cadence and created a repeatable board/investor reporting pack.
+        </p>
+        <div class="case-grid">
+          <div class="mini"><strong>Challenge</strong><p>Delayed reporting, unclear variances, and ad-hoc stakeholder requests.</p></div>
+          <div class="mini"><strong>What we did</strong><p>Defined a monthly close timeline, KPI dashboard, and variance narrative template.</p></div>
+          <div class="mini"><strong>Outcome</strong><p>Reliable reporting cadence, clearer accountability, and improved stakeholder confidence.</p></div>
+        </div>
       </div>
     </div>
 
     <p class="small" style="margin-top:14px;color:var(--muted);">
-      If you prefer not to show pricing publicly, I can convert this section into “Engagement Options” without numbers.
+      Want these tailored to your actual work? Tell me your preferred industries and I’ll rewrite these into 3–4 “true-to-life” case studies.
     </p>
   </div>
 </section>
