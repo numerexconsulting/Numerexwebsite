@@ -1,316 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Numerex | Fractional CFO Services (Canada)</title>
+<meta name="description" content="Numerex provides fractional CFO and finance operations support in Canada." />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-  <!-- SEO -->
-  <title>Numerex | Fractional CFO Services (Canada) | Cash Flow, Forecasting & Reporting</title>
-  <meta name="description" content="Numerex provides fractional CFO and finance operations support in Canada. Cash flow, forecasting, reporting, and board-ready materials. Book a call today." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="#" />
-
-  <!-- Social -->
-  <meta property="og:title" content="Numerex | Fractional CFO Services (Canada)" />
-  <meta property="og:description" content="Fractional CFO support: cash flow, forecasting, reporting, and board-ready materials." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="logo_nx.png" />
-  <meta name="twitter:card" content="summary" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-
-  <style>
-    :root{
-      --bg:#ffffff;
-      --ink:#0b1220;
-      --muted:#55657a;
-      --line:#e6edf5;
-      --soft:#f7fafc;
-      --brand1:#00b3b8;
-      --brand2:#0066cc;
-      --shadow: 0 14px 40px rgba(2, 6, 23, .10);
-      --radius: 18px;
-      --font: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.55}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1120px;margin:0 auto;padding:0 20px}
-
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
-    .brand img{height:42px;width:auto;display:block}
-    .navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
-    .navlinks a{font-weight:600;color:var(--muted)}
-    .navlinks a:hover{color:var(--ink)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700}
-    .btn.primary{border:none;background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#fff}
-    .btn.primary:hover{opacity:.92}
-
-    section{padding:64px 0;border-top:1px solid var(--line)}
-    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center}
-    @media (max-width: 920px){ .split{grid-template-columns:1fr;} }
-
-    .hero{border-top:none;position:relative;overflow:hidden}
-    .hero::before{
-      content:"";
-      position:absolute;inset:0;
-      background:
-        linear-gradient(90deg, rgba(11,18,32,.86), rgba(11,18,32,.55)),
-        url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
-    }
-    .hero-inner{position:relative;padding:86px 0}
-    .tag{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#fff;font-weight:700;font-size:13px}
-    .tag .dot{width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--brand1),var(--brand2))}
-    h1{color:#fff;font-size:46px;letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
-    .sub{color:rgba(255,255,255,.86);font-size:18px;max-width:760px;margin:0 0 22px}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
-    .hero-note{margin-top:14px;color:rgba(255,255,255,.80);font-size:14px}
-    .hero-note a{text-decoration:underline}
-
-    .grid{display:grid;gap:16px}
-    .grid.cols-3{grid-template-columns:repeat(3, minmax(0,1fr))}
-    .grid.cols-2{grid-template-columns:repeat(2, minmax(0,1fr))}
-    @media (max-width: 920px){ .grid.cols-3,.grid.cols-2{grid-template-columns:1fr} h1{font-size:38px} }
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 1px 0 rgba(2,6,23,.02)}
-    .card:hover{box-shadow:var(--shadow);transform:translateY(-1px);transition:.18s ease}
-    .card h3{margin:10px 0 6px;font-size:16px}
-    .card p{margin:0;color:var(--muted)}
-    .icon{width:38px;height:38px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(0,179,184,.16), rgba(0,102,204,.14));border:1px solid rgba(2,6,23,.06)}
-    .icon svg{width:18px;height:18px}
-
-    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
-    .section-head h2{margin:0;font-size:28px;letter-spacing:-.02em}
-    .section-head p{margin:0;color:var(--muted);max-width:720px}
-
-    .image-block{
-      border-radius:24px;
-      border:1px solid var(--line);
-      min-height:320px;
-      background: linear-gradient(180deg, rgba(11,18,32,.10), rgba(11,18,32,.12)),
-                  url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
-      box-shadow:0 10px 30px rgba(2,6,23,.10);
-    }
-    .image-block.about{
-      background: linear-gradient(180deg, rgba(11,18,32,.10), rgba(11,18,32,.12)),
-                  url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
-      min-height:340px;
-    }
-
-    .price{font-size:28px;font-weight:800;letter-spacing:-.02em;margin:6px 0 6px}
-    .small{color:var(--muted);font-size:14px}
-    ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
-    li{margin:6px 0}
-
-    .cta{
-      background:
-        linear-gradient(90deg, rgba(11,18,32,.82), rgba(11,18,32,.58)),
-        url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
-      border-radius:26px;
-      border:1px solid rgba(255,255,255,.14);
-      padding:26px;
-      color:#fff;
-    }
-    .cta h3{margin:0;font-size:22px}
-    .cta p{margin:8px 0 0;color:rgba(255,255,255,.86)}
-    .cta-row{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
-    .calendly-inline-widget{min-width:320px;height:720px;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
-
-    footer{padding:26px 0;color:var(--muted)}
-    .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
-  </style>
+<style>
+body{margin:0;font-family:Inter,sans-serif;color:#0b1220;background:#fff}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e6edf5}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
+.brand img{height:42px}
+.btn{padding:10px 14px;border-radius:999px;background:linear-gradient(135deg,#00b3b8,#0066cc);color:#fff;font-weight:700;text-decoration:none}
+.hero{position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat}
+.hero-inner{position:relative;padding:100px 0;color:#fff}
+section{padding:64px 0;border-top:1px solid #e6edf5}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.image-block.about{background:url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;border-radius:20px;min-height:320px}
+.image-block.services{background:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;border-radius:20px;min-height:320px}
+.cta{background:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;padding:40px;border-radius:20px;color:#fff}
+footer{padding:20px;color:#55657a}
+</style>
 </head>
 <body>
 
 <header>
-  <div class="container nav">
-    <div class="brand">
-      <img src="logo_nx.png" alt="Numerex logo" />
-    </div>
-    <nav class="navlinks">
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-    </nav>
-  </div>
+<div class="container nav">
+<div class="brand"><img src="logo_nx.png"></div>
+<a class="btn" href="https://calendly.com/numerexconsulting">Book a Call</a>
+</div>
 </header>
 
-<section class="hero" aria-label="hero">
-  <div class="container hero-inner">
-    <div class="tag"><span class="dot"></span> Fractional CFO + Finance Ops</div>
-    <h1>Clean finances. Clear decisions.</h1>
-    <p class="sub">A proven monthly finance team for growing companies—cash visibility, reporting, and strategic support without a full-time CFO.</p>
-    <div class="hero-cta">
-      <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-      <a class="btn" href="#pricing">View packages</a>
-    </div>
-    <div class="hero-note">Prefer email? <a href="mailto:numerexconsulting@gmail.com">numerexconsulting@gmail.com</a></div>
-  </div>
+<section class="hero">
+<div class="container hero-inner">
+<h1>Clean finances. Clear decisions.</h1>
+<p>Fractional CFO support for growing companies.</p>
+<a class="btn" href="https://calendly.com/numerexconsulting">Book a Call</a>
+</div>
 </section>
 
 <section id="services">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Services</h2>
-        <p>Everything you need to run finance well—delivered in a simple monthly cadence.</p>
-      </div>
-    </div>
-
-    <div class="split">
-      <div>
-        <div class="grid cols-3">
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-3 4 4 6-8"/></svg></div>
-            <h3>Bookkeeping</h3>
-            <p>Accurate books with a clean monthly close.</p>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8 8-4-4"/><path d="M7 7h10"/></svg></div>
-            <h3>Tax coordination</h3>
-            <p>Stay organized for filings and compliance.</p>
-          </div>
-          <div class="card">
-            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M3 12h18"/></svg></div>
-            <h3>HR + Fractional CFO</h3>
-            <p>Strategic support when you need it.</p>
-          </div>
-        </div>
-
-        <div style="margin-top:16px" class="small">
-          Want just CFO work (forecasting, board reporting, planning)? Book a call—we’ll scope it.
-        </div>
-      </div>
-
-      <div class="image-block" aria-label="stock image: dashboards"></div>
-    </div>
-  </div>
-</section>
-
-<section id="pricing">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Packages</h2>
-        <p>Flexible month-to-month plans designed to grow with you.</p>
-      </div>
-      <a class="btn" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Ask about fit</a>
-    </div>
-
-    <div class="grid cols-3">
-      <div class="card">
-        <h3>Getting Started</h3>
-        <div class="price">$500<span class="small">/mo</span></div>
-        <div class="small">Best for &lt; $50K/mo spend</div>
-        <ul>
-          <li>Bookkeeping + monthly close</li>
-          <li>Monthly wrap-up email/video</li>
-          <li>Support via email + Slack</li>
-        </ul>
-      </div>
-
-      <div class="card" style="border-color: rgba(0,179,184,.35); box-shadow: var(--shadow);">
-        <h3>Scaling Up</h3>
-        <div class="price">$1,000<span class="small">/mo</span></div>
-        <div class="small">Best for $50K–$200K/mo spend</div>
-        <ul>
-          <li>Bookkeeping + spend management</li>
-          <li>Vendor/contractor oversight</li>
-          <li>Async support via email + Slack</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Growth Accelerator</h3>
-        <div class="price">$1,500<span class="small">/mo</span></div>
-        <div class="small">Best for $200K–$400K/mo spend</div>
-        <ul>
-          <li>Bookkeeping + spend management</li>
-          <li>Controller-level support</li>
-          <li>Optional live video calls</li>
-        </ul>
-      </div>
-    </div>
-
-    <div style="margin-top:16px" class="card">
-      <div class="section-head" style="margin-bottom:0;">
-        <div>
-          <h3 style="margin:0;">Additional services</h3>
-          <p class="small" style="margin:6px 0 0;">Custom plan for higher complexity.</p>
-        </div>
-        <div class="price" style="margin:0;">$Custom</div>
-      </div>
-      <div class="grid cols-3" style="margin-top:14px">
-        <div class="card"><strong>Company expenses $400K+</strong><div class="small">More volume, more cadence.</div></div>
-        <div class="card"><strong>Invoicing + AR</strong><div class="small">Billing, collections, and process.</div></div>
-        <div class="card"><strong>Payroll + HR support</strong><div class="small">Setup, oversight, and coordination.</div></div>
-        <div class="card"><strong>Fractional CFO</strong><div class="small">Forecasting, board reporting, planning.</div></div>
-        <div class="card"><strong>Fundraising support</strong><div class="small">Model + metrics + narrative.</div></div>
-        <div class="card"><strong>Cleanup projects</strong><div class="small">Catch-up + controls + close.</div></div>
-      </div>
-    </div>
-
-    <p class="small" style="margin-top:12px;">
-      Package structure and pricing aligned to common startup spend bands. citeturn0view0
-    </p>
-  </div>
+<div class="container split">
+<div>
+<h2>Services</h2>
+<p>Bookkeeping, reporting, and CFO support.</p>
+</div>
+<div class="image-block services"></div>
+</div>
 </section>
 
 <section id="about">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>About</h2>
-        <p>Senior finance support, delivered simply.</p>
-      </div>
-    </div>
-
-    <div class="split">
-      <div class="card" style="border-radius:24px;">
-        <h3 style="margin:0 0 10px;">Numerex</h3>
-        <p class="small" style="font-size:15px;margin:0;">
-          We help leadership teams stay on top of cash, keep reporting clean, and make confident decisions.
-          You get a clear monthly rhythm—without long meetings or heavy process.
-        </p>
-        <div style="margin-top:14px" class="hero-cta">
-          <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-          <a class="btn" href="mailto:numerexconsulting@gmail.com">Email</a>
-        </div>
-      </div>
-      <div class="image-block about" aria-label="stock image: meeting"></div>
-    </div>
-  </div>
+<div class="container split">
+<div>
+<h2>About</h2>
+<p>Numerex provides clear financial structure and strategic guidance.</p>
+</div>
+<div class="image-block about"></div>
+</div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="cta">
-      <h3>Ready to simplify finance?</h3>
-      <p>Book a call or send an email. We’ll confirm fit and next steps.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-        <a class="btn" href="mailto:numerexconsulting@gmail.com">numerexconsulting@gmail.com</a>
-      </div>
-    </div>
-
-    <div style="margin-top:18px;">
-      <div class="calendly-inline-widget" data-url="https://calendly.com/numerexconsulting"></div>
-      <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    </div>
-  </div>
+<div class="container">
+<div class="cta">
+<h2>Book a call</h2>
+<p>Email numerexconsulting@gmail.com or schedule via Calendly.</p>
+<a class="btn" href="https://calendly.com/numerexconsulting">Schedule</a>
+</div>
+</div>
 </section>
 
 <footer>
-  <div class="container foot">
-    <div>© 2026 Numerex</div>
-    <div class="small">Email: <a href="mailto:numerexconsulting@gmail.com" style="text-decoration:underline;">numerexconsulting@gmail.com</a></div>
-  </div>
+<div class="container">© 2026 Numerex</div>
 </footer>
 
 </body>
