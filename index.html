@@ -4,24 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Title -->
-  <title>Numerex | Fractional CFO Services (Canada) | Cash Flow, Forecasting & KPI Reporting</title>
-
-  <!-- SEO Meta -->
-  <meta name="description" content="Numerex provides fractional CFO and strategic finance support in Canada. Cash flow + runway planning, forecasting, KPI reporting, board-ready materials, and finance ops oversight." />
+  <!-- SEO -->
+  <title>Numerex | Fractional CFO Services (Canada) | Cash Flow, Forecasting & Reporting</title>
+  <meta name="description" content="Numerex provides fractional CFO and finance operations support in Canada. Cash flow, forecasting, reporting, and board-ready materials. Book a call today." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="#" />
 
-  <!-- Open Graph / Social -->
+  <!-- Social -->
   <meta property="og:title" content="Numerex | Fractional CFO Services (Canada)" />
-  <meta property="og:description" content="Fractional CFO and strategic finance support: cash flow, forecasting, KPI reporting, and board-ready materials." />
+  <meta property="og:description" content="Fractional CFO support: cash flow, forecasting, reporting, and board-ready materials." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="logo_nx.png" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Numerex | Fractional CFO Services (Canada)" />
-  <meta name="twitter:description" content="Cash flow + runway planning, forecasting, KPI reporting, and board-ready materials." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,14 +25,14 @@
   <style>
     :root{
       --bg:#ffffff;
-      --ink:#0f172a;
-      --muted:#475569;
-      --line:#e2e8f0;
-      --soft:#f8fafc;
+      --ink:#0b1220;
+      --muted:#55657a;
+      --line:#e6edf5;
+      --soft:#f7fafc;
       --brand1:#00b3b8;
       --brand2:#0066cc;
-      --shadow: 0 12px 35px rgba(2, 6, 23, .08);
-      --radius: 16px;
+      --shadow: 0 14px 40px rgba(2, 6, 23, .10);
+      --radius: 18px;
       --font: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     }
     *{box-sizing:border-box}
@@ -47,93 +41,87 @@
     a{color:inherit;text-decoration:none}
     .container{max-width:1120px;margin:0 auto;padding:0 20px}
 
-    /* Top nav */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.86);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px;min-width:180px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:14px}
     .brand img{height:42px;width:auto;display:block}
-    .navlinks{display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:flex-end}
+    .navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
     .navlinks a{font-weight:600;color:var(--muted)}
     .navlinks a:hover{color:var(--ink)}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700}
-    .pill.primary{border:none;background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#fff}
-    .pill.primary:hover{opacity:.92}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:#fff;font-weight:700}
+    .btn.primary{border:none;background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#fff}
+    .btn.primary:hover{opacity:.92}
 
-    /* Hero */
-    .hero{position:relative;overflow:hidden}
+    section{padding:64px 0;border-top:1px solid var(--line)}
+    .split{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center}
+    @media (max-width: 920px){ .split{grid-template-columns:1fr;} }
+
+    .hero{border-top:none;position:relative;overflow:hidden}
     .hero::before{
       content:"";
-      position:absolute;inset:-200px -200px auto -200px;
-      height:520px;
-      background:radial-gradient(600px 300px at 20% 30%, rgba(0,179,184,.25), transparent 60%),
-                 radial-gradient(700px 400px at 80% 10%, rgba(0,102,204,.22), transparent 60%);
-      pointer-events:none;
+      position:absolute;inset:0;
+      background:
+        linear-gradient(90deg, rgba(11,18,32,.86), rgba(11,18,32,.55)),
+        url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
     }
-    .hero-inner{padding:64px 0 34px;position:relative}
-    .kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(2,6,23,.03);border:1px solid var(--line);color:var(--muted);font-weight:600}
-    .kicker .dot{width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--brand1),var(--brand2))}
-    h1{font-size:44px;letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
-    .sub{font-size:18px;color:var(--muted);max-width:760px;margin:0 0 22px}
-    .cta-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-top:10px}
-    .cta-note{margin-top:14px;color:var(--muted);font-size:14px}
-    .cta-note a{text-decoration:underline}
+    .hero-inner{position:relative;padding:86px 0}
+    .tag{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#fff;font-weight:700;font-size:13px}
+    .tag .dot{width:8px;height:8px;border-radius:999px;background:linear-gradient(135deg,var(--brand1),var(--brand2))}
+    h1{color:#fff;font-size:46px;letter-spacing:-.03em;line-height:1.05;margin:16px 0 14px}
+    .sub{color:rgba(255,255,255,.86);font-size:18px;max-width:760px;margin:0 0 22px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .hero-note{margin-top:14px;color:rgba(255,255,255,.80);font-size:14px}
+    .hero-note a{text-decoration:underline}
 
-    /* Sections */
-    section{padding:56px 0;border-top:1px solid var(--line)}
+    .grid{display:grid;gap:16px}
+    .grid.cols-3{grid-template-columns:repeat(3, minmax(0,1fr))}
+    .grid.cols-2{grid-template-columns:repeat(2, minmax(0,1fr))}
+    @media (max-width: 920px){ .grid.cols-3,.grid.cols-2{grid-template-columns:1fr} h1{font-size:38px} }
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 1px 0 rgba(2,6,23,.02)}
+    .card:hover{box-shadow:var(--shadow);transform:translateY(-1px);transition:.18s ease}
+    .card h3{margin:10px 0 6px;font-size:16px}
+    .card p{margin:0;color:var(--muted)}
+    .icon{width:38px;height:38px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(0,179,184,.16), rgba(0,102,204,.14));border:1px solid rgba(2,6,23,.06)}
+    .icon svg{width:18px;height:18px}
+
     .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px}
     .section-head h2{margin:0;font-size:28px;letter-spacing:-.02em}
     .section-head p{margin:0;color:var(--muted);max-width:720px}
 
-    /* Cards / grids */
-    .grid{display:grid;gap:16px}
-    .grid.cols-3{grid-template-columns:repeat(3, minmax(0,1fr))}
-    .grid.cols-2{grid-template-columns:repeat(2, minmax(0,1fr))}
-    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:0 1px 0 rgba(2,6,23,.02)}
-    .card:hover{box-shadow:var(--shadow);transform:translateY(-1px);transition:.18s ease}
-    .card h3{margin:10px 0 8px;font-size:16px}
-    .card p{margin:0;color:var(--muted)}
-    .icon{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg, rgba(0,179,184,.18), rgba(0,102,204,.16));border:1px solid rgba(2,6,23,.06)}
-    .icon svg{width:18px;height:18px}
+    .image-block{
+      border-radius:24px;
+      border:1px solid var(--line);
+      min-height:320px;
+      background: linear-gradient(180deg, rgba(11,18,32,.10), rgba(11,18,32,.12)),
+                  url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
+      box-shadow:0 10px 30px rgba(2,6,23,.10);
+    }
+    .image-block.about{
+      background: linear-gradient(180deg, rgba(11,18,32,.10), rgba(11,18,32,.12)),
+                  url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
+      min-height:340px;
+    }
 
-    /* Proof strip */
-    .proof{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:26px}
-    .proof .chip{padding:10px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--muted);font-weight:600;font-size:13px}
+    .price{font-size:28px;font-weight:800;letter-spacing:-.02em;margin:6px 0 6px}
+    .small{color:var(--muted);font-size:14px}
+    ul{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+    li{margin:6px 0}
 
-    /* Case studies */
-    .case{background:var(--soft);border:1px solid var(--line);border-radius:24px;padding:22px}
-    .case-top{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:14px}
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--muted);font-weight:700;font-size:13px}
-    .case h3{margin:0;font-size:18px}
-    .case-grid{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:14px;margin-top:14px}
-    .mini{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px}
-    .mini strong{display:block;margin-bottom:6px}
-    .mini p{margin:0;color:var(--muted)}
-
-    /* CTA band */
-    .cta-band{background:linear-gradient(135deg, rgba(0,179,184,.12), rgba(0,102,204,.10));border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-    .cta-band h3{margin:0;font-size:20px}
-    .cta-band p{margin:6px 0 0;color:var(--muted)}
-
-    /* Calendly */
-    .calendly-inline-widget{min-width:320px;height:720px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+    .cta{
+      background:
+        linear-gradient(90deg, rgba(11,18,32,.82), rgba(11,18,32,.58)),
+        url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;
+      border-radius:26px;
+      border:1px solid rgba(255,255,255,.14);
+      padding:26px;
+      color:#fff;
+    }
+    .cta h3{margin:0;font-size:22px}
+    .cta p{margin:8px 0 0;color:rgba(255,255,255,.86)}
+    .cta-row{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap}
+    .calendly-inline-widget{min-width:320px;height:720px;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
 
     footer{padding:26px 0;color:var(--muted)}
     .foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
-
-    /* Responsive */
-    @media (max-width: 920px){
-      h1{font-size:38px}
-      .grid.cols-3{grid-template-columns:1fr}
-      .grid.cols-2{grid-template-columns:1fr}
-      .case-grid{grid-template-columns:1fr}
-      .section-head{flex-direction:column;align-items:flex-start}
-      .cta-band{flex-direction:column;align-items:flex-start}
-    }
-    @media (max-width: 520px){
-      h1{font-size:32px}
-      .navlinks{gap:12px}
-      .brand img{height:38px}
-    }
   </style>
 </head>
 <body>
@@ -145,216 +133,169 @@
     </div>
     <nav class="navlinks">
       <a href="#services">Services</a>
-      <a href="#why">Why Numerex</a>
-      <a href="#process">Process</a>
-      <a href="#case-studies">Case Studies</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#about">About</a>
       <a href="#contact">Contact</a>
-      <a class="pill primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
+      <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
     </nav>
   </div>
 </header>
 
-<main class="hero">
+<section class="hero" aria-label="hero">
   <div class="container hero-inner">
-    <div class="kicker"><span class="dot"></span> Fractional CFO & Strategic Finance</div>
-    <h1>Clarity for decisions. Structure for growth.</h1>
-    <p class="sub">
-      Numerex partners with leadership teams to improve cash visibility, forecasting, KPI reporting, and board-ready materials—without the overhead of a full-time CFO.
-    </p>
-    <div class="cta-row">
-      <a class="pill primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-      <a class="pill" href="#services">Explore Services</a>
+    <div class="tag"><span class="dot"></span> Fractional CFO + Finance Ops</div>
+    <h1>Clean finances. Clear decisions.</h1>
+    <p class="sub">A proven monthly finance team for growing companies—cash visibility, reporting, and strategic support without a full-time CFO.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
+      <a class="btn" href="#pricing">View packages</a>
     </div>
-    <div class="cta-note">
-      Prefer email? <a href="mailto:numerexconsulting@gmail.com">numerexconsulting@gmail.com</a>
-    </div>
-
-    <div class="proof" aria-label="proof points">
-      <div class="chip">Cash flow + runway planning</div>
-      <div class="chip">Forecasting + models</div>
-      <div class="chip">Monthly reporting packs</div>
-      <div class="chip">Investor + board support</div>
-    </div>
+    <div class="hero-note">Prefer email? <a href="mailto:numerexconsulting@gmail.com">numerexconsulting@gmail.com</a></div>
   </div>
-</main>
+</section>
 
 <section id="services">
   <div class="container">
     <div class="section-head">
       <div>
         <h2>Services</h2>
-        <p>Senior-level finance support across planning, reporting, and decision-making—delivered in a simple monthly cadence.</p>
+        <p>Everything you need to run finance well—delivered in a simple monthly cadence.</p>
       </div>
+    </div>
+
+    <div class="split">
+      <div>
+        <div class="grid cols-3">
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-3 4 4 6-8"/></svg></div>
+            <h3>Bookkeeping</h3>
+            <p>Accurate books with a clean monthly close.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7l-8 8-4-4"/><path d="M7 7h10"/></svg></div>
+            <h3>Tax coordination</h3>
+            <p>Stay organized for filings and compliance.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18"/><path d="M3 12h18"/></svg></div>
+            <h3>HR + Fractional CFO</h3>
+            <p>Strategic support when you need it.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px" class="small">
+          Want just CFO work (forecasting, board reporting, planning)? Book a call—we’ll scope it.
+        </div>
+      </div>
+
+      <div class="image-block" aria-label="stock image: dashboards"></div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <h2>Packages</h2>
+        <p>Flexible month-to-month plans designed to grow with you.</p>
+      </div>
+      <a class="btn" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Ask about fit</a>
     </div>
 
     <div class="grid cols-3">
       <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-3 4 4 6-8"/></svg>
-        </div>
-        <h3>Cash Flow & Working Capital</h3>
-        <p>Runway planning, collections cadence, expense controls, and cash visibility you can trust.</p>
+        <h3>Getting Started</h3>
+        <div class="price">$500<span class="small">/mo</span></div>
+        <div class="small">Best for &lt; $50K/mo spend</div>
+        <ul>
+          <li>Bookkeeping + monthly close</li>
+          <li>Monthly wrap-up email/video</li>
+          <li>Support via email + Slack</li>
+        </ul>
+      </div>
+
+      <div class="card" style="border-color: rgba(0,179,184,.35); box-shadow: var(--shadow);">
+        <h3>Scaling Up</h3>
+        <div class="price">$1,000<span class="small">/mo</span></div>
+        <div class="small">Best for $50K–$200K/mo spend</div>
+        <ul>
+          <li>Bookkeeping + spend management</li>
+          <li>Vendor/contractor oversight</li>
+          <li>Async support via email + Slack</li>
+        </ul>
       </div>
 
       <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-6"/></svg>
-        </div>
-        <h3>Forecasting & Financial Planning</h3>
-        <p>Drivers-based forecasting, budgeting, scenario planning, and hiring plans tied to reality.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16"/><path d="M7 16V8"/><path d="M12 16V5"/><path d="M17 16v-10"/></svg>
-        </div>
-        <h3>KPI & Performance Reporting</h3>
-        <p>Monthly KPI dashboards and management packs that drive decisions—not just compliance.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-6 4 2 8-6-5-6 5 2-8-6-4h7z"/></svg>
-        </div>
-        <h3>Board & Investor Support</h3>
-        <p>Board decks, investor updates, and analysis packaged for stakeholders and diligence.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18"/><path d="M12 3v18"/></svg>
-        </div>
-        <h3>Transaction Readiness</h3>
-        <p>Clean reporting, metrics, and narrative support for financing, refinancing, or exits.</p>
-      </div>
-
-      <div class="card">
-        <div class="icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 7L9 19l-5.5-5.5"/></svg>
-        </div>
-        <h3>Finance Ops Oversight</h3>
-        <p>Coordination with bookkeeping and tax partners, plus process improvements and controls.</p>
+        <h3>Growth Accelerator</h3>
+        <div class="price">$1,500<span class="small">/mo</span></div>
+        <div class="small">Best for $200K–$400K/mo spend</div>
+        <ul>
+          <li>Bookkeeping + spend management</li>
+          <li>Controller-level support</li>
+          <li>Optional live video calls</li>
+        </ul>
       </div>
     </div>
+
+    <div style="margin-top:16px" class="card">
+      <div class="section-head" style="margin-bottom:0;">
+        <div>
+          <h3 style="margin:0;">Additional services</h3>
+          <p class="small" style="margin:6px 0 0;">Custom plan for higher complexity.</p>
+        </div>
+        <div class="price" style="margin:0;">$Custom</div>
+      </div>
+      <div class="grid cols-3" style="margin-top:14px">
+        <div class="card"><strong>Company expenses $400K+</strong><div class="small">More volume, more cadence.</div></div>
+        <div class="card"><strong>Invoicing + AR</strong><div class="small">Billing, collections, and process.</div></div>
+        <div class="card"><strong>Payroll + HR support</strong><div class="small">Setup, oversight, and coordination.</div></div>
+        <div class="card"><strong>Fractional CFO</strong><div class="small">Forecasting, board reporting, planning.</div></div>
+        <div class="card"><strong>Fundraising support</strong><div class="small">Model + metrics + narrative.</div></div>
+        <div class="card"><strong>Cleanup projects</strong><div class="small">Catch-up + controls + close.</div></div>
+      </div>
+    </div>
+
+    <p class="small" style="margin-top:12px;">
+      Package structure and pricing aligned to common startup spend bands. citeturn0view0
+    </p>
   </div>
 </section>
 
-<section id="why">
+<section id="about">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2>Why Numerex</h2>
-        <p>A clean monthly rhythm, practical outputs, and senior thinking—without unnecessary meetings or complexity.</p>
+        <h2>About</h2>
+        <p>Senior finance support, delivered simply.</p>
       </div>
     </div>
 
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>Decision-ready deliverables</h3>
-        <p>Clear cash view, a forecast you can run weekly, and a reporting pack you can share with stakeholders.</p>
-      </div>
-      <div class="card">
-        <h3>Systems & cadence</h3>
-        <p>Repeatable monthly close cadence, consistent metrics, and predictable timelines.</p>
-      </div>
-      <div class="card">
-        <h3>Collaborative by design</h3>
-        <p>Works alongside your internal team and external accountants—no stepping on toes.</p>
-      </div>
-      <div class="card">
-        <h3>Flexible engagement</h3>
-        <p>Month-to-month options that scale up or down based on the stage and complexity.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>How it works</h2>
-        <p>A simple 4-step process to get financial clarity fast, then maintain it with a steady cadence.</p>
-      </div>
-    </div>
-
-    <div class="grid cols-2">
-      <div class="card">
-        <h3>1) Quick diagnostic</h3>
-        <p>We map current reporting, cash visibility, and decision needs. Then we set a realistic cadence.</p>
-      </div>
-      <div class="card">
-        <h3>2) Build the core model</h3>
-        <p>Forecast + KPI framework that matches how you actually operate (revenue drivers, costs, headcount).</p>
-      </div>
-      <div class="card">
-        <h3>3) Reporting pack</h3>
-        <p>Monthly management pack: KPIs, cash, P&L, variance notes, and next-step recommendations.</p>
-      </div>
-      <div class="card">
-        <h3>4) Ongoing cadence</h3>
-        <p>Ongoing support: planning updates, stakeholder reporting, and decision support as needs arise.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="case-studies">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <h2>Case studies</h2>
-        <p>Representative examples of the types of outcomes we drive. (Details anonymized.)</p>
-      </div>
-      <a class="pill" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Discuss your situation</a>
-    </div>
-
-    <div class="grid cols-2">
-      <div class="case">
-        <div class="case-top">
-          <div class="badge">SaaS • Cash visibility</div>
-          <div class="badge">6–8 weeks</div>
-        </div>
-        <h3>From “we’re not sure” to a weekly runway dashboard</h3>
-        <p style="color:var(--muted);margin:10px 0 0;">
-          The team lacked a consistent cash view and decisions were reactive. Numerex implemented a forecasting cadence, clarified drivers, and introduced a simple reporting pack.
+    <div class="split">
+      <div class="card" style="border-radius:24px;">
+        <h3 style="margin:0 0 10px;">Numerex</h3>
+        <p class="small" style="font-size:15px;margin:0;">
+          We help leadership teams stay on top of cash, keep reporting clean, and make confident decisions.
+          You get a clear monthly rhythm—without long meetings or heavy process.
         </p>
-        <div class="case-grid">
-          <div class="mini"><strong>Challenge</strong><p>No single source of truth for runway, burn, or near-term hiring capacity.</p></div>
-          <div class="mini"><strong>What we did</strong><p>Built a drivers-based cash forecast + KPI set, and set a weekly update rhythm.</p></div>
-          <div class="mini"><strong>Outcome</strong><p>Clear runway visibility, fewer surprises, and faster decisions on spend + hiring.</p></div>
+        <div style="margin-top:14px" class="hero-cta">
+          <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
+          <a class="btn" href="mailto:numerexconsulting@gmail.com">Email</a>
         </div>
       </div>
-
-      <div class="case">
-        <div class="case-top">
-          <div class="badge">PE-backed • Board reporting</div>
-          <div class="badge">4–6 weeks</div>
-        </div>
-        <h3>Board-ready reporting and a cleaner monthly close</h3>
-        <p style="color:var(--muted);margin:10px 0 0;">
-          Stakeholder reporting was inconsistent and took too long. Numerex streamlined the close cadence and created a repeatable board/investor reporting pack.
-        </p>
-        <div class="case-grid">
-          <div class="mini"><strong>Challenge</strong><p>Delayed reporting, unclear variances, and ad-hoc stakeholder requests.</p></div>
-          <div class="mini"><strong>What we did</strong><p>Defined a monthly close timeline, KPI dashboard, and variance narrative template.</p></div>
-          <div class="mini"><strong>Outcome</strong><p>Reliable reporting cadence, clearer accountability, and improved stakeholder confidence.</p></div>
-        </div>
-      </div>
+      <div class="image-block about" aria-label="stock image: meeting"></div>
     </div>
   </div>
 </section>
 
 <section id="contact">
   <div class="container">
-    <div class="cta-band">
-      <div>
-        <h3>Ready to get financial clarity?</h3>
-        <p>Book a call or email us. We’ll confirm fit, scope, and next steps.</p>
-      </div>
+    <div class="cta">
+      <h3>Ready to simplify finance?</h3>
+      <p>Book a call or send an email. We’ll confirm fit and next steps.</p>
       <div class="cta-row">
-        <a class="pill primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
-        <a class="pill" href="mailto:numerexconsulting@gmail.com">Email</a>
+        <a class="btn primary" href="https://calendly.com/numerexconsulting" target="_blank" rel="noopener">Book a Call</a>
+        <a class="btn" href="mailto:numerexconsulting@gmail.com">numerexconsulting@gmail.com</a>
       </div>
     </div>
 
