@@ -1,36 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Numerex | Fractional CFO Services (Canada)</title>
-<meta name="description" content="Numerex provides fractional CFO and finance operations support in Canada." />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Numerex | Fractional CFO Services</title>
+<meta name="description" content="Numerex provides fractional CFO, bookkeeping, and finance operations support.">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Inter,sans-serif;color:#0b1220;background:#fff}
-.container{max-width:1120px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e6edf5}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.brand img{height:42px}
-.btn{padding:10px 14px;border-radius:999px;background:linear-gradient(135deg,#00b3b8,#0066cc);color:#fff;font-weight:700;text-decoration:none}
-.hero{position:relative}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat}
-.hero-inner{position:relative;padding:100px 0;color:#fff}
-section{padding:64px 0;border-top:1px solid #e6edf5}
-.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.image-block.about{background:url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;border-radius:20px;min-height:320px}
-.image-block.services{background:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;border-radius:20px;min-height:320px}
-.cta{background:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70') center/cover no-repeat;padding:40px;border-radius:20px;color:#fff}
-footer{padding:20px;color:#55657a}
+body {
+margin:0;
+font-family:Inter,sans-serif;
+color:#0b1220;
+background:#fff;
+}
+
+.container {
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
+
+header {
+position:sticky;
+top:0;
+background:#fff;
+border-bottom:1px solid #eee;
+z-index:100;
+}
+
+.nav {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.nav img {
+height:42px;
+}
+
+.btn {
+background:linear-gradient(135deg,#00b3b8,#0066cc);
+color:#fff;
+padding:10px 16px;
+border-radius:999px;
+text-decoration:none;
+font-weight:600;
+}
+
+.hero {
+position:relative;
+}
+
+.hero::before {
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=2400&q=70") center/cover no-repeat;
+}
+
+.hero-inner {
+position:relative;
+padding:100px 0;
+color:#fff;
+}
+
+section {
+padding:60px 0;
+border-top:1px solid #eee;
+}
+
+.split {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+align-items:center;
+}
+
+.image {
+border-radius:20px;
+min-height:320px;
+background-size:cover;
+background-position:center;
+}
+
+.image.services {
+background-image:url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=2400&q=70");
+}
+
+.image.about {
+background-image:url("https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=2400&q=70");
+}
+
+.cta {
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=2400&q=70") center/cover no-repeat;
+border-radius:20px;
+padding:40px;
+color:#fff;
+}
+
+.pricing {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card {
+border:1px solid #eee;
+padding:20px;
+border-radius:20px;
+}
+
+.price {
+font-size:28px;
+font-weight:700;
+margin:10px 0;
+}
+
+footer {
+padding:20px;
+color:#666;
+}
+
+@media(max-width:800px){
+.split, .pricing {
+grid-template-columns:1fr;
+}
+}
 </style>
 </head>
+
 <body>
 
 <header>
 <div class="container nav">
-<div class="brand"><img src="logo_nx.png"></div>
+<img src="logo_nx.png">
 <a class="btn" href="https://calendly.com/numerexconsulting">Book a Call</a>
 </div>
 </header>
@@ -38,43 +150,79 @@ footer{padding:20px;color:#55657a}
 <section class="hero">
 <div class="container hero-inner">
 <h1>Clean finances. Clear decisions.</h1>
-<p>Fractional CFO support for growing companies.</p>
+<p>Fractional CFO and finance operations support.</p>
 <a class="btn" href="https://calendly.com/numerexconsulting">Book a Call</a>
 </div>
 </section>
 
-<section id="services">
+<section>
 <div class="container split">
 <div>
 <h2>Services</h2>
-<p>Bookkeeping, reporting, and CFO support.</p>
+<p>Bookkeeping, reporting, and CFO support delivered monthly.</p>
 </div>
-<div class="image-block services"></div>
+<div class="image services"></div>
 </div>
 </section>
 
-<section id="about">
+<section>
+<div class="container">
+<h2>Packages</h2>
+
+<div class="pricing">
+
+<div class="card">
+<h3>Getting Started</h3>
+<div class="price">$500/mo</div>
+<p>Bookkeeping and monthly close.</p>
+</div>
+
+<div class="card">
+<h3>Scaling Up</h3>
+<div class="price">$1,000/mo</div>
+<p>Bookkeeping and spend management.</p>
+</div>
+
+<div class="card">
+<h3>Growth Accelerator</h3>
+<div class="price">$1,500/mo</div>
+<p>Controller-level and finance support.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section>
 <div class="container split">
 <div>
 <h2>About</h2>
-<p>Numerex provides clear financial structure and strategic guidance.</p>
+<p>Numerex helps companies stay financially organized and make better decisions.</p>
 </div>
-<div class="image-block about"></div>
+<div class="image about"></div>
 </div>
 </section>
 
-<section id="contact">
+<section>
 <div class="container">
 <div class="cta">
-<h2>Book a call</h2>
-<p>Email numerexconsulting@gmail.com or schedule via Calendly.</p>
-<a class="btn" href="https://calendly.com/numerexconsulting">Schedule</a>
+<h2>Ready to simplify finance?</h2>
+<p>Email numerexconsulting@gmail.com or book a call.</p>
+<a class="btn" href="https://calendly.com/numerexconsulting">Schedule Call</a>
 </div>
+
+<div style="margin-top:20px;">
+<div class="calendly-inline-widget" data-url="https://calendly.com/numerexconsulting"></div>
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</div>
+
 </div>
 </section>
 
 <footer>
-<div class="container">© 2026 Numerex</div>
+<div class="container">
+© 2026 Numerex
+</div>
 </footer>
 
 </body>
